@@ -1,3 +1,4 @@
+  
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
@@ -10,7 +11,7 @@ class UserTest < ActiveSupport::TestCase
   test "should be valid" do
     assert @user.valid?
   end
-=begin
+
   test "name should be present" do
     @user.name = ""
     assert_not @user.valid?
@@ -64,5 +65,4 @@ class UserTest < ActiveSupport::TestCase
     @user.password = @user.password_confirmation = "a" * 5
     assert_not @user.valid?
   end
-=end  
 end
