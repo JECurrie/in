@@ -1,8 +1,17 @@
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 require 'rails/test_help'
+require "minitest/reporters"
+Minitest::Reporters.use!
 
 class ActiveSupport::TestCase
+<<<<<<< HEAD
+=======
+  # Run tests in parallel with specified workers
+  parallelize(workers: :number_of_processors)
+
+  # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
+>>>>>>> basic-login
   fixtures :all
 
   # Returns true if a test user is logged in.
