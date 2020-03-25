@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class MicropostInterfaceTest < ActionDispatch::IntegrationTest
-
+=begin
   def setup
     @user = users(:michael)
   end
@@ -19,7 +19,7 @@ class MicropostInterfaceTest < ActionDispatch::IntegrationTest
     get root_path
     assert_match "1 micropost", response.body
   end
-=begin
+
   test "micropost interface" do
     log_in_as(@user)
     get root_path
