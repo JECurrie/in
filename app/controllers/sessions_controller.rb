@@ -1,3 +1,4 @@
+=begin
 class SessionsController < ApplicationController
 
   def new
@@ -20,3 +21,4 @@ class SessionsController < ApplicationController
     redirect_to root_url
   end
 end
+=end

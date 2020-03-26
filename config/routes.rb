@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'application#hello'  #  
+  root 'application#hello'  # Listing 3.6: Setting the root route. 
 =begin  
   root   'static_pages#home'
   ##get    'static_pages/home'
