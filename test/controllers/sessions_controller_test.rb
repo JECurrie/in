@@ -1,3 +1,4 @@
+=begin
 require 'test_helper'
 
 class SessionsControllerTest < ActionDispatch::IntegrationTest
@@ -7,3 +8,4 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
 #    assert_response :success
 # end
 end
+=end

@@ -6,7 +6,7 @@ Minitest::Reporters.use!
 
 class ActiveSupport::TestCase
   fixtures :all
-
+=begin
   # Returns true if a test user is logged in.
   def is_logged_in?
     !session[:user_id].nil?
@@ -26,4 +26,5 @@ class ActionDispatch::IntegrationTest
                                           password: password,
                                           remember_me: remember_me } }
   end
+=end  
 end

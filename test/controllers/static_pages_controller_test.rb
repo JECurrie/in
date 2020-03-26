@@ -1,3 +1,4 @@
+=begin
 require 'test_helper'
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
@@ -13,3 +14,4 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
 =end  
 end
+=end
