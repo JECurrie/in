@@ -14,12 +14,12 @@ Rails.application.routes.draw do
   get    '/contact', to: 'static_pages#contact'
 
   get    '/signup',  to: 'users#new'  #Listing 5.43: A route for the signup page.
- 
+  resources :users
+
 #  get    '/login',   to: 'sessions#new'
 #  post   '/login',   to: 'sessions#create'
 =begin
   delete '/logout',  to: 'sessions#destroy'
-  resources :users
 
 ##  resources :account_activations, only: [:edit]
 ##  resources :password_resets,     only: [:new, :create, :edit, :update]
