@@ -15,8 +15,8 @@ Rails.application.routes.draw do
 
   ## ##get    '/signup',  to: 'users#new'  #Listing 5.43: A route for the signup page.
  
-  get    '/login',   to: 'sessions#new'
-  post   '/login',   to: 'sessions#create'
+#  get    '/login',   to: 'sessions#new'
+#  post   '/login',   to: 'sessions#create'
 =begin
   delete '/logout',  to: 'sessions#destroy'
   resources :users
