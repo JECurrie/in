@@ -3,8 +3,7 @@ class ApplicationController < ActionController::Base
 #  def hello
 #    render html: "hello, world!"
 #  end
-=begin
-  include SessionsHelper
+##  include SessionsHelper
 
   private
 
@@ -16,5 +15,5 @@ class ApplicationController < ActionController::Base
         redirect_to login_url
       end
     end
-=end    
+   
 end

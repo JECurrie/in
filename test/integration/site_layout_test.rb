@@ -1,3 +1,4 @@
+=begin
 require 'test_helper'
 
 class SiteLayoutTest < ActionDispatch::IntegrationTest
@@ -14,3 +15,4 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
   end
   
 end
+=end

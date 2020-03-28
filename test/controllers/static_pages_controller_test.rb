@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
-
+=begin
   test "should get home" do
     get root_path #static_pages_home_url  #Listing 5.28: The static pages tests with the new named routes. 
     assert_response :success
@@ -21,4 +21,5 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     get contact_path #    get static_pages_contact_url
     assert_response :success
   end
+=end  
 end
