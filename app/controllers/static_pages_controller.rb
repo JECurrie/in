@@ -9,11 +9,10 @@ class StaticPagesController < ApplicationController
 
   def help
   end
-=begin
+
   def about
   end
 
   def contact
   end
-=end  
 end
