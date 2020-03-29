@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::Base
 #Listing 3.5: Adding a hello action to the Application controller.
-#  def hello
-#    render html: "hello, world!"
-#  end
+  def hello
+    render html: "hello, world!"
+  end
 ##  include SessionsHelper
 =begin
   private

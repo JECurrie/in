@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   get  'static_pages/about' #Listing 3.20: Adding the about route. red  config/routes.rb
   get  'static_pages/contact' #Listing 5.23: Adding a route for the Contact page. 
 =end
-  ##  root 'application#hello'  # Listing 3.6: Setting the root route. 
-   
+    root 'application#hello'  # Listing 3.6: Setting the root route. 
+=begin   
   root   'static_pages#home'
   get    '/help',    to: 'static_pages#help'
   get    '/about',   to: 'static_pages#about'
@@ -15,7 +15,7 @@ Rails.application.routes.draw do
 
   get    '/signup',  to: 'users#new'  #Listing 5.43: A route for the signup page.
   resources :users
-
+=end
 #  get    '/login',   to: 'sessions#new'
 #  post   '/login',   to: 'sessions#create'
 =begin
