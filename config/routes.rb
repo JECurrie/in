@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 =begin
-  root 'static_pages#home'  
+  root 'static_pages#home' 
+=end   
   get  'static_pages/home'  #Listing 3.8: The routes for the home and help actions in the Static Pages controller. config/routes.rb
   get  'static_pages/help'
+=begin
   get  'static_pages/about' #Listing 3.20: Adding the about route. red  config/routes.rb
   get  'static_pages/contact' #Listing 5.23: Adding a route for the Contact page. 
 =end
