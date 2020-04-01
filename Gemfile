@@ -18,8 +18,7 @@ gem 'turbolinks',                 '5.2.0'
 gem 'jbuilder',                   '2.9.1'
 gem 'bootsnap',                   '1.4.5', require: false
 gem 'actionview', '~> 6.0', '>= 6.0.2.2'
-#gem 'actionview', '~> 6.0', '>= 6.0.2.2'
-##gem "actionview", ">= 6.0.2.1"
+
 #gem 'win32console', '~> 1.3', '>= 1.3.2'
 
 group :development, :test do
