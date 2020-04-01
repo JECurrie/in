@@ -1,6 +1,6 @@
-#require 'test_helper'
+require 'test_helper'
 
-#class UserTest < ActiveSupport::TestCase
+class UserTest < ActiveSupport::TestCase
 =begin
   def setup
     @user = User.new(name: "Example User", email: "user@example.com",
@@ -64,4 +64,4 @@
     assert_not @user.valid?
   end
 =end  
-#end
+end
