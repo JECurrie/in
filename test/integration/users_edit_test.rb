@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class UsersEditTest < ActionDispatch::IntegrationTest
-=begin
+#begin
   def setup
     @user = users(:michael)
   end
@@ -36,5 +36,5 @@ class UsersEditTest < ActionDispatch::IntegrationTest
     assert_equal email, @user.email
  
   end
-=end  
+#=end  
 end

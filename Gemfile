@@ -19,7 +19,7 @@ gem 'jbuilder',                   '2.9.1'
 gem 'bootsnap',                   '1.4.5', require: false
 gem 'actionview', '~> 6.0', '>= 6.0.2.2'
 
-#gem 'win32console', '~> 1.3', '>= 1.3.2'
+gem 'win32console', '~> 1.3', '>= 1.3.2'
 gem 'rake', '~> 12.3', '>= 12.3.3'
 
 group :development, :test do
