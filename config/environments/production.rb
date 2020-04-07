@@ -40,7 +40,7 @@ Rails.application.configure do
   host = 'localhost:3000'                     # Local server
   config.action_mailer.default_url_options = { host: host, protocol: 'http' }
 
-  ## ##config.action_mailer.default_url_options[:host] = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options[:host] = { host: 'localhost', port: 3000 }
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
