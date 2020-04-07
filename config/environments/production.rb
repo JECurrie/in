@@ -36,11 +36,11 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Store uploaded files on Amazon AWS.
-  ## ##config.active_storage.service = :amazon
-  host = 'localhost:3000'                     # Local server
-  config.action_mailer.default_url_options = { host: host, protocol: 'http' }
+  config.active_storage.service = :amazon
+  ## ##host = 'localhost:3000'                     # Local server
+  ## ##config.action_mailer.default_url_options = { host: host, protocol: 'http' }
 
-  config.action_mailer.default_url_options[:host] = { host: 'localhost', port: 3000 }
+  ## ##config.action_mailer.default_url_options[:host] = { host: 'localhost', port: 3000 }
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil

@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
 #    render html: "hello, world!"
 #  end
   include SessionsHelper
-=begin
+#=begin
   private
 
     # Confirms a logged-in user.
@@ -15,5 +15,5 @@ class ApplicationController < ActionController::Base
         redirect_to login_url
       end
     end
-=end   
+#=end   
 end
