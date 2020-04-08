@@ -9,7 +9,7 @@ class MicropostsController < ApplicationController
       flash[:success] = "Micropost created!"
       redirect_to root_url
     else
-      @feed_items = current_user.feed.paginate(page: params[:page])
+      @feed_items = current_user.feed.paginate(page: params[:page]) #Listing 13.50: Adding an (empty) @feed_items instance variable to the create action.
       render 'static_pages/home'
     end
   end

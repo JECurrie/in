@@ -72,7 +72,7 @@ class UserTest < ActiveSupport::TestCase
       @user.destroy
     end
   end
-
+=begin  Listing 14.13: A test for followers. green, Listing 14.9: Tests for some “following” utility methods. red 
   test "should follow and unfollow a user" do
     michael = users(:michael)
     archer  = users(:archer)
@@ -82,4 +82,5 @@ class UserTest < ActiveSupport::TestCase
     michael.unfollow(archer)
     assert_not michael.following?(archer)
   end
+=end  
 end

@@ -1,9 +1,11 @@
 class User < ApplicationRecord
   has_many :microposts, dependent: :destroy
+=begin      Listing 14.2: Implementing the active relationships has_many association. red
   has_many :active_relationships, class_name:  "Relationship",
                                   foreign_key: "follower_id",
                                   dependent:   :destroy
-  has_many :following, through: :active_relationships, source: :followed
+=end                                  
+##  has_many :following, through: :active_relationships, source: :followed  Listing 14.8: Adding the User model following association.
   attr_accessor :remember_token
   before_save { self.email = email.downcase }
   validates :name, presence: true, length: { maximum: 50 }
@@ -66,17 +68,17 @@ class User < ApplicationRecord
 
   # Follows a user.
   def follow(other_user)
-    following << other_user
+##    following << other_user       Listing 14.10: Utility methods for following.
   end
 
   # Unfollows a user.
   def unfollow(other_user)
-    following.delete(other_user)
+##    following.delete(other_user)  Listing 14.10: Utility methods for following.
   end
 
   # Returns true if the current user is following the other user.
   def following?(other_user)
-    following.include?(other_user)
+##    following.include?(other_user)  Listing 14.10: Utility methods for following.
   end
 
   private
