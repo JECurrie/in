@@ -1,3 +1,4 @@
+=begin
 class Micropost < ApplicationRecord
   belongs_to       :user
   has_one_attached :image
@@ -14,3 +15,4 @@ class Micropost < ApplicationRecord
     image.variant(resize_to_limit: [500, 500])
   end
 end
+=end

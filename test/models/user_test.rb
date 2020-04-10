@@ -64,7 +64,7 @@ class UserTest < ActiveSupport::TestCase
     @user.password = @user.password_confirmation = "a" * 5
     assert_not @user.valid?
   end
-
+=begin
   test "associated microposts should be destroyed" do
     @user.save
     @user.microposts.create!(content: "Lorem ipsum")
@@ -72,6 +72,7 @@ class UserTest < ActiveSupport::TestCase
       @user.destroy
     end
   end
+=end  
 =begin  Listing 14.13: A test for followers. green, Listing 14.9: Tests for some “following” utility methods. red 
 test "should follow and unfollow a user" do
     michael  = users(:michael)

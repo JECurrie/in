@@ -1,3 +1,4 @@
+=begin
 require 'test_helper'
 
 class MicropostsInterfaceTest < ActionDispatch::IntegrationTest
@@ -35,3 +36,4 @@ class MicropostsInterfaceTest < ActionDispatch::IntegrationTest
     assert_select 'a', text: 'delete', count: 0
   end
 end
+=end

@@ -1,7 +1,8 @@
-<% if @feed_items.any? %>  <!--Listing 13.48: The status feed partial.-->
-  <ol class="microposts">
+<%# if @feed_items.any? %>  <!--Listing 13.48: The status feed partial.-->
+<!--  <ol class="microposts">
     <%= render @feed_items %>
   </ol>
   <%= will_paginate @feed_items,
                     params: { controller: :static_pages, action: :home } %>
-<% end %>
+<% end %> 
+-->
