@@ -64,29 +64,8 @@ class UserTest < ActiveSupport::TestCase
     @user.password = @user.password_confirmation = "a" * 5
     assert_not @user.valid?
   end
-=begin
-  test "associated microposts should be destroyed" do
-    @user.save
-    @user.microposts.create!(content: "Lorem ipsum")
-    assert_difference 'Micropost.count', -1 do
-      @user.destroy
-    end
-  end
-=end  
-=begin  Listing 14.13: A test for followers. green, Listing 14.9: Tests for some “following” utility methods. red 
-test "should follow and unfollow a user" do
-    michael  = users(:michael)
-    archer   = users(:archer)
-    assert_not michael.following?(archer)
-    michael.follow(archer)
-    assert michael.following?(archer)
-#    assert archer.followers.include?(michael)
-    michael.unfollow(archer)
-    assert_not michael.following?(archer)
-  end
-=end  
 
   test "authenticated? should return false for a user with nil digest" do
-    assert_not @user.authenticated?('')
+    assert_not @user.authenticated?(:remember, '')
   end
 end
