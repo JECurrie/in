@@ -17,7 +17,7 @@ class UsersEditTest < ActionDispatch::IntegrationTest
 
     assert_template 'users/edit'
   end
-
+=begin
   test "successful edit with friendly forwarding" do
    
     get edit_user_path(@user)
@@ -34,7 +34,6 @@ class UsersEditTest < ActionDispatch::IntegrationTest
     @user.reload
     assert_equal name,  @user.name
     assert_equal email, @user.email
- 
   end
-#=end  
+=end  
 end
